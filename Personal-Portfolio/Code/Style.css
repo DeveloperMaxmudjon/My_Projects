@@ -1,0 +1,354 @@
+@import url('https://fonts.cdnfonts.com/css/ibm-plex-mono-3');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', sans-serif;   
+}
+
+#active {
+    margin-left: 10px;
+}
+
+.h1 {
+    margin: 20px auto;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.p {
+    margin: 20px auto;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto; 
+}
+
+header {
+    max-width: 1250px;
+    height: 70px;
+    background-color: #1B1B1B;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+header nav {
+    width: 80%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header nav ul {
+    width: 720px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container ul li {
+    font-family: 'IBM Plex Mono 700', sans-serif;
+    list-style-type: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    color: #9C9C9C;
+    cursor: pointer;
+}
+
+.nav-icon {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-icon img  {
+    width: 30px;
+    height: 30px;
+    opacity: 30%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+main .hero-section {
+    width: 100%;
+    background-color: black;
+    height: 750px;
+    align-items: center;
+}
+
+.personal-info {
+    width: 80%;
+    height: 460px;
+    text-align: left;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.personal-info > img {
+    width: 350px;
+    height: 350px;
+}
+
+.user-info {
+    width: 500px;
+    height: 330px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    line-height: 20px;
+    word-spacing: 3px;
+    margin-top: 120px;
+}
+
+.user-info h1 {
+    font-size: 44px;
+    color: white;
+    font-family: 'IBM Plex Mono 700', sans-serif;
+}
+
+.user-info p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9C9C9C;
+    font-family: 'IBM Plex Mono 700', sans-serif;
+    margin: 30px 0;
+}
+
+.user-info a button {
+    width: 300px;
+    height: 60px;
+    background-color: #3F8E00;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono 700', sans-serif;
+    border: 1px #62BA1B solid;
+    border-radius: 4px;
+    box-shadow: 0px 11px 48px 3px rgba(63,142,0,0.49);
+
+}
+
+.user-info a {
+    text-decoration: none;
+}
+
+.person-worked {
+    width: 1000px;
+    margin: 10px auto;
+    color: white;
+    font-size: 18px;
+}
+
+
+.person-worked nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.person-worked nav a {
+    width: 170px;
+    height: 60px;
+    border: 2px #1B1B1B solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.case-stud {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.case-stud > p {
+    margin: 20px auto;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.case-stud > h1 {
+    margin: 20px auto;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.work {
+    margin: 80px 0 ;
+}
+
+.work h4 {
+    width: 72px;
+    height: 17px;
+    font-size: 12px;
+    color: #FFA217;
+    text-align: center;
+    padding: 10px;
+    border-radius: 60px;
+    margin: 15px;
+    background-color: #FFF6E9;
+}
+
+.work h1 {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 15px;
+}
+
+.work p {
+    width: 500px;
+    color: #9C9C9C;
+    font-weight: 400;
+    margin: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.work button {
+    padding: 10px 24px 10px 24px;
+    background-color: #FFA217;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.client-base {
+    width: 100%;
+    height: 800px;
+    background-color: black;
+}
+
+.client-nav {
+    width: 1050px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-info {
+    position: relative;
+    box-sizing: border-box;
+    width: 440px;
+    border: 1px #484848 solid;
+}
+
+.client-info > img {
+    position: absolute;
+    left: 20px;
+    top: -15px;
+}
+
+.client-info p {
+    width: 400px;
+    color: #9C9C9C;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 30px;
+}
+
+.client-foto {
+    width: 200px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px ;
+}
+
+.client-foto span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.work-list {
+    width: 100%;
+    height: 830px;
+}
+
+.works {
+    width: 1050px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    width: 100%;
+    height: 870px;
+    background-color: black;
+}
+
+form {
+    width: 360px;
+    height: 450px;
+    margin: 80px auto;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+form input {
+    margin: 8px 0 20px;
+    width: 330px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px #D8D8D8 solid;
+}
+
+form textarea {
+    width: 321px;
+    padding: 16px;
+    font-size: 14px;
+    border: 1px #D8D8D8 solid;
+    border-radius: 6px;
+    margin: 8px 0 20px;
+    min-height: 120px;
+    font-family: 'IBM Plex Mono', monospace;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+form button {
+    width: 357px;
+    padding: 14px;
+    font-size: 14px;
+    background-color: #28a000;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    font-family: 'IBM Plex Mono', monospace;
+    box-shadow: 0 0 10px #28a00088;
+}
+
+footer div {
+    width: 100%;
+    height: 60px;
+    background-color: #1B1B1B;
+    text-align: center;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
