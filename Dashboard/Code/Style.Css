@@ -1,0 +1,33 @@
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 1.5fr 6.5fr 2fr;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-breadcrumb {
+    display: flex;
+    column-gap: 5px;
+}
+
+.search {
+    display: flex;
+}
+
+
+main {
+    background-color: black;
+    grid-column: 2 / span 1;
+}
