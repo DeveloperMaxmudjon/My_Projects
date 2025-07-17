@@ -129,6 +129,10 @@ header button {
     color: #1C1C1C33;
 }
 
+.dashboard-card {
+    margin-left: 20px;
+}
+
 .dashboard-list {
     display: grid;
     grid-auto-flow: row;
@@ -141,7 +145,7 @@ header button {
 
 .dashboard-list li {
     display: flex;
-    align-items: center;
+    align-items: center;    
     font-size: 14px;
     font-weight: 500;
     color: #1C1C1C;
@@ -149,19 +153,13 @@ header button {
     padding: 5px 10px;
     gap: 10px;
     position: relative;
-    transition: background-color 0.2s ease;
-    cursor: pointer;
-}
-
-.dashboard-list li:hover {
-    background-color: #f3f3f3;
 }
 
 .dashboard-list li::before {
     content: "›";
     color: #D1D5DB;
-    margin-right: 15px;
-    font-size: 20px;
+    margin-right: 5px;
+    font-size: 25px;
 }
 
 .dashboard-list li img {
@@ -170,17 +168,17 @@ header button {
 }
 
 .dashboard-list li.active {
-    background-color: #F3F4F6;
     font-weight: 600;
+    margin-left: 25px;
 }
 
 .dashboard-list li.active::before {
     content: "";
-    width: 4px;
-    height: 100%;
+    width: 3px;
+    height: 60%;
     background-color: #111827;
-    border-radius: 4px;
+    border-radius: 30px;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: -25px;
+    top: 10px;
 }
