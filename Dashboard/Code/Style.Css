@@ -9,7 +9,7 @@
 .container {
     display: grid;
     column-gap: 30px;
-    grid-template-columns: 1.5fr 6.5fr 2fr;
+    grid-template-columns: 1.6fr 6.5fr 2fr;
 }
 
 header {
@@ -79,18 +79,18 @@ header button {
 }
 
 .sidebar {
-    margin: 17px auto;
     display: grid;
-    grid-template-columns: 180px;
+    grid-template-columns: 200px;
     grid-template-rows: 32px 104px 168px 360px;
-    row-gap: 20px;
-
+    row-gap: 35px;
+    border-right: 1px #1C1C1C1A solid;
 }
 
 .badge {
     display: grid;
     grid-template-columns: 30px 100px;
     align-items: center;
+    margin: 17px 0 0 20px;
 }
 
 
@@ -98,11 +98,12 @@ header button {
     display: grid;
     grid-template-columns: 74px 78px;
     grid-auto-rows: 28px 50px;
-    column-gap: 30px;
+    column-gap: 15px;
+    row-gap: 10px;
+    margin-left: 20px;
 }
 
 .favorites {
-    text-align: center;
     color: #1C1C1C66;
 }
 
@@ -111,19 +112,75 @@ header button {
     color: #1C1C1C33;
 }
 
-.list {
+.sidebar-list {
     display: grid;
     grid-column: 1 / span 2;
-    row-gap: 7px;
+    row-gap: 10px;
 }
 
-.list li {
+.sidebar-list li {
     font-size: 14px;
     font-weight: 400;
     list-style-position: inside;
     text-indent: 10px;
 }
 
-.list li::marker {
+.sidebar-list li::marker {
     color: #1C1C1C33;
+}
+
+.dashboard-list {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: 190px;
+    grid-auto-rows: 40px;
+    list-style: none;
+    padding: 0;
+    row-gap: 5px;
+}
+
+.dashboard-list li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1C1C1C;
+    border-radius: 10px;
+    padding: 5px 10px;
+    gap: 10px;
+    position: relative;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.dashboard-list li:hover {
+    background-color: #f3f3f3;
+}
+
+.dashboard-list li::before {
+    content: "›";
+    color: #D1D5DB;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.dashboard-list li img {
+    width: 20px;
+    height: 20px;
+}
+
+.dashboard-list li.active {
+    background-color: #F3F4F6;
+    font-weight: 600;
+}
+
+.dashboard-list li.active::before {
+    content: "";
+    width: 4px;
+    height: 100%;
+    background-color: #111827;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
