@@ -82,10 +82,11 @@ header button {
 .sidebar {
     display: grid;
     grid-template-columns: 200px;
-    grid-template-rows: 32px 104px 148px 300px 36px;
-    row-gap: 27px;
+    grid-template-rows: 31px 90px 148px 300px 80px;
+    row-gap: 20px;
     border-right: 1px #1C1C1C1A solid;
     grid-row: 1 / span 2;
+    font-size: 14px;
 }
 
 .badge {
@@ -238,10 +239,52 @@ header button {
 
 .logo {
     width: 100px;
+    padding-top: 40px;
     margin: 0 auto;
 }
 
 .frame {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
+}
+
+.rightbar {
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: 230px 280px 280px;
+    grid-template-columns: 250px;
+    grid-row: 1 / span 2;
+    border-left: 1px solid #1C1C1C1A;
+    padding-left: 20px;
+}
+
+.notification, .activities, .contacts {
+    display: grid;
+    grid-template-rows: 30px repeat(4, 40px) ;
+    list-style-type: none;
+    row-gap: 5px;
+    padding-top: 15px;
+
+
+    li {
+        display: flex;
+        column-gap: 10px;
+    }
+}
+
+.contacts {
+    grid-template-rows:repeat(6, 30px) ;
+}
+
+
+.text-span h4{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.text-span p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #1C1C1C66;
+    padding-top: 3px;
 }
