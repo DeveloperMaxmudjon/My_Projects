@@ -6,6 +6,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+img, h1, h2, h3, h4, h5, h6, li, span {
+    cursor: pointer;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1.6fr 6.5fr 2fr;
