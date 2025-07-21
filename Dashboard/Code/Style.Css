@@ -302,9 +302,9 @@ header button {
 .frame {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 115px 330px 280px;
-    padding: 50px 30px;
-    row-gap: 20px;
+    grid-template-rows: 100px 280px 215px;
+    padding: 20px 30px;
+    row-gap: 15px;
     column-gap: 20px;
 }
 
@@ -351,3 +351,132 @@ header button {
 .location {
     grid-column: 3 / span 2;
 } 
+
+.website {
+    background-color: #F7F9FB;
+    padding: 20px 0 0 15px;
+}
+
+.website-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.website-list .title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.website-list li.bar {
+  position: relative;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #1C1C1C;
+}
+
+.website-list li.bar::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100px;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.google::after     { width: 60px;   background-color: #E5E7EB;}
+.youtube::after    { width: 45px;   background-color: #E5E7EB;}
+.instagram::after  { width: 80px;   background-color: #1C1C1C; }  
+.pinterest::after  { width: 40px;   background-color: #E5E7EB;}
+.facebook::after   { width: 50px;   background-color: #E5E7EB;}
+.twitter::after    { width: 42px;   background-color: #E5E7EB;}
+.tumblr::after     { width: 40px;   background-color: #E5E7EB;}
+
+.user-static {
+    background-image: url(../Images/images/Block.svg);
+    background-repeat: no-repeat;
+}
+
+.device {
+    background-color: #F7F9FB;
+    display: grid;
+    padding: 25px;
+    border-radius: 16px;
+    grid-template-columns: repeat(3, 26px);
+    grid-template-rows: 20px 140px;
+    row-gap: 15px;
+}
+
+.device h4 {
+    grid-column: 1 / span 4;
+}
+
+.device .static {
+    display: grid;
+    grid-column: 1 / span  5;
+    grid-row: 2 / span 1;
+    grid-template-columns: 26px 370px;
+    grid-template-rows: 140px;
+    column-gap: 0px;
+}
+
+.device .row {
+    display: grid;
+    grid-auto-rows: 30px;
+    color: #1C1C1C66;
+    font-weight: 400;
+    font-size: 12px;
+    row-gap: 4px;
+}
+
+.device .column {
+    display: flex;
+    justify-content: space-between;
+    color: #1C1C1C66;
+    font-weight: 400;
+    font-size: 12px;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+.Mac, .Windows, .Android, .Other, .IOS, .linux {
+    width: 60px;
+    text-align: center;
+}
+
+
+.value {
+    background-color: #95A4FC;
+    width: 20px;
+    height: 70px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin: 10px auto;
+}
+
+.Mac .value {
+    height: 85px;
+    background-color: #BAEDBD;
+}
+
+.IOS .value {
+    background-color: #1C1C1C;
+    height: 76px;
+}
+
+.Windows .value {
+    background-color: #B1E3FF;
+    height: 95px;
+}
+
+.Android .value {
+    background-color: #A8C5DA;
+    height: 42px;
+}
+
+.Other .value {
+    background-color: #A1E3CB;
+    height: 80px;
+}
