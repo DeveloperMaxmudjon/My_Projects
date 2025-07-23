@@ -395,8 +395,9 @@ header button {
 .tumblr::after     { width: 40px;   background-color: #E5E7EB;}
 
 .user-static {
-    background-image: url(../Images/images/Block.svg);
+    background-image: url(../Images/images/Block\ \(1\).svg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .device {
@@ -484,18 +485,39 @@ header button {
 .location {
     display: grid;
     grid-template-columns: 385px;
-    grid-template-rows: 20px 200px;
+    grid-template-rows: 20px 140px;
+    row-gap: 15px;
+    background-color: #F7F9FB;
+    border-radius: 16px;
+    padding: 25px;
 }
 
 .hero-static {
     display: grid;
-    grid-template-columns: 120px 185px;
-    grid-template-rows: 120px;
+    grid-template-columns: 150px 185px;
+    grid-template-rows: 140px;
+    column-gap: 60px;
+
 }
 
 .circol-status {
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     border: 20px solid #95A4FC;
     border-radius: 50%;
+}
+
+.list-status {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.list-status li {
+    width: 190px;
+
+    span {
+        display: flex;
+        justify-content: space-between;
+    }
 }
