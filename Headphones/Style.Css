@@ -1,0 +1,53 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+                                                
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 6fr 3fr;
+    grid-template-rows: 70px 270px 235px 150px;
+}
+
+.card {
+    color: white;
+    outline: 2px solid white;
+    padding: 1px;
+}
+
+.leftbar {
+    grid-row: 1 / span 4;
+    padding: 25px;
+}
+
+.user-profil {
+    display: flex;
+    align-items: center;
+
+
+    h3 {
+            color: #016170;
+            font-size: 25px;
+            font-weight: 700;
+
+    }
+
+    span {
+        width: 52px;
+        height: 52px;
+        background-color: #fff;
+    }
+}
+
+.header {
+    grid-column: 2 / span 2;
+}
+
+.righ-bar {
+    grid-column-start: 3;
+    grid-row: 3 / span 5;
+}

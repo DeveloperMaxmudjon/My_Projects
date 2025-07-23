@@ -480,3 +480,22 @@ header button {
     background-color: #A1E3CB;
     height: 80px;
 }
+
+.location {
+    display: grid;
+    grid-template-columns: 385px;
+    grid-template-rows: 20px 200px;
+}
+
+.hero-static {
+    display: grid;
+    grid-template-columns: 120px 185px;
+    grid-template-rows: 120px;
+}
+
+.circol-status {
+    width: 110px;
+    height: 110px;
+    border: 20px solid #95A4FC;
+    border-radius: 50%;
+}
