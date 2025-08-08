@@ -353,10 +353,9 @@
 
 .popular-list {
     display: flex;
-    overflow-x: auto;  
-    overflow-y: hidden;   
+    overflow-x: scroll; 
     white-space: nowrap;   
-    gap: 20px;            
+    gap: 10px;            
     padding: 10px;
     position: relative;
 }
@@ -372,14 +371,23 @@
     justify-content: center;
     border: none;
     box-shadow: 10px 23px 38px 1px rgba(0,0,0,0.14);
-    position:sticky;
-    top: 45%;
-    right: 10px; 
+    position: sticky;   
+    top: 40%;
+    right: 10px;
     cursor: pointer;
-}   
+    z-index: 10;
+}
 
-.fixed-button:hover .product {
-    margin-right: 50px;
+.fixed-button:hover ~ .hover12 {
+    margin-right: 150px;
+}
+
+.hover12:hover {
+    margin-right: 100px;
+}
+
+.fixed-button:hover + .hover43 {
+    display: none;
 }
 
 .product {
