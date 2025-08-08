@@ -358,6 +358,28 @@
     white-space: nowrap;   
     gap: 20px;            
     padding: 10px;
+    position: relative;
+}
+
+.fixed-button {
+    width: 10px;
+    height: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 10px 23px 38px 1px rgba(0,0,0,0.14);
+    position:sticky;
+    top: 45%;
+    right: 10px; 
+    cursor: pointer;
+}   
+
+.fixed-button:hover .product {
+    margin-right: 50px;
 }
 
 .product {
@@ -494,7 +516,7 @@
     font-size: 16px;
     font-weight: 600;
     margin: 0;
-    color: #333;
+    color: #5C5C5C;
 }
 
 .text-reviews p {
@@ -508,3 +530,72 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.righ-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.other-product-title {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        font-weight: 24px;
+        font-weight: 600;
+        color: #016170;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #5C5C5C;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.other-product {
+    display: flex;
+    justify-content: space-between;
+    height: 43px;
+
+    .product-img {
+        width: 55px;
+        height: 55px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-name3 {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h4 {
+            color: black;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        p {
+             color: #5C5C5C;
+             font-size: 14px;
+             font-weight: 500;
+        }
+    }
+
+    .product-price {
+        width: 80px;
+        p {
+            color: #5C5C5C;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+}
+
