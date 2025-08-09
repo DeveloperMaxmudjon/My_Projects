@@ -382,10 +382,6 @@
     margin-right: 150px;
 }
 
-.hover12:hover {
-    margin-right: 100px;
-}
-
 .fixed-button:hover + .hover43 {
     display: none;
 }
