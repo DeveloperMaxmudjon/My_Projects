@@ -61,7 +61,7 @@ body {
     width: 85%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100vh 3700px 1442px 472px;
+    grid-template-rows: 100vh 3600px 1142px 472px;
     margin: 0 auto;
     position: relative;
 }
@@ -207,13 +207,42 @@ main {
         padding: 100px;
         border-radius: 100px;
         justify-content: space-between;
+        align-items: center;
+        gap: 1px;
+
+        > img {
+            width: 550px;
+            height: 550px;
+        }
 
         > .text {
-            width: 600px;
-            height: 600px;
+            width: 550px;
+            height: 680px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            h1 {
+                font-size: 45px;
+                font-weight: 700;
+                font-family: 'Segoe UI Bold';;
+                width: 500px;
+            }
+
+            button {
+                width: 330px;
+                padding: 19px 40px;
+                background-color: #F9B800;
+                font-weight: 700;
+                color: #262626;
+                font-size: 24px;
+                font-family: 'Segoe UI Bold';
+                border-radius: 500px;
+                display: flex;
+                border: none;
+                align-items: center;
+                gap: 60px;
+            }
         }
     }
 }
@@ -225,7 +254,10 @@ main {
     gap: 20px;
 
     span {
+        padding: 10px 30px 10px 15px;
         background-color: #FFFAEB;
+        gap: 10px;
+        font-size: 18px;
     }
 }
 
@@ -261,6 +293,54 @@ main {
         align-items: center;
         gap: 60px;
     }
+}
+
+article {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 130px 160px repeat(6, 100px);
+    row-gap: 20px;
+
+    > .text {
+        width: 892px;
+        text-align: center;
+        margin: 0 auto;
+        h1 {
+            color: #262626;
+            font-size: 55px;
+            font-weight: 700;
+            font-family: 'Segoe UI Bold';
+            text-align: center;
+        }
+
+        > p {
+            width: 850px;
+            font-size: 28px;
+            font-weight: 400;
+            font-family: 'Segoe UI Regular';
+            text-align: center;
+        }
+    }
+
+    span {
+        width: 100%;
+        display: flex; 
+        padding: 20px 40px;
+        background-color: #fff;
+        border-radius: 40px;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            width: 40px;
+        }
+    }
+
 }
 
 .sect-1 > img {
@@ -406,7 +486,7 @@ main {
     }
 }
 
-article, footer {
+footer {
     background-color: #262626;
     border: 5px solid white;
 }
