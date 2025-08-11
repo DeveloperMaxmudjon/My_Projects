@@ -60,10 +60,10 @@ body {
 .container {
     width: 85%;
     display: grid;
+    height: 6000px;
     grid-template-columns: 100%;
     grid-template-rows: 100vh 3600px 1142px 472px;
     margin: 0 auto;
-    position: relative;
 }
 
 header {
@@ -92,7 +92,7 @@ header {
 
 header > section {
     margin: 60px auto;
-    width: 1100px;
+    width: 100%;
     height: 460px;
     display: flex;
     flex-direction: column;
@@ -159,14 +159,14 @@ main {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 700px 730px 670px 900px;
-    row-gap: 150px  ;
+    row-gap: 150px ;
 
     .sect-1 {
         background-color: #F9B800;
         border-radius: 100px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         padding: 110px;
         gap: 100px;
     }   
@@ -174,15 +174,15 @@ main {
     .sect-2 {
         background-color: #262626;
         display: flex;
-        align-items: center;
+
         border-radius: 100px;
+        justify-content: space-between;
         padding: 60px 100px;
         gap: 90px;
 
         .box-group {
             display: flex;
             gap: 40px;
-            margin-top: 280px;
         }
     }
 
@@ -414,6 +414,7 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 150px 0;
 }
 
 .sect-2 > .text p {
@@ -489,4 +490,111 @@ article {
 footer {
     background-color: #262626;
     border: 5px solid white;
+    padding: 100px;
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    > .text, .link {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    h1 {
+        width: 713px;
+        font-size: 50px;
+        font-weight: 700;
+        font-family: 'Segoe UI Bold';
+        color: white; 
+    }
+
+    button {
+        padding: 23px 50px;
+        border-radius: 50000px;
+        display: flex;
+        align-items: center;
+        width: 300px;
+        height: 70px;
+        justify-content: space-between;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Segoe UI Bold';
+    }
+
+    p {
+        color: white;
+        font-size: 22px;
+        font-weight: 600;
+        font-family: 'Segoe UI Regular';
+    }
+}
+
+@media screen and (max-width: 377px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 1100px;
+
+        section {
+            height: 650px;
+            span {
+                h3 {
+                    font-size: 16px;
+                }
+                h1 {
+                    font-size: 35px;
+                }
+            }
+            .chek-list {
+                height: 400px;
+                span {
+                    padding: 12px 40px 14px 20px;
+                    background-color: white;
+                    border-radius: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 600;
+                    font-size: 16px;
+                    gap: 5px;
+                    font-family: 'Segoe UI Regular';
+                }
+            }
+        }
+    }
+
+    main {
+        grid-template-rows: 900px 730px 670px 900px;
+
+        .sect-1 {
+            width: auto;
+            height: 900px;
+            padding: 20px 10px;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column-reverse;
+
+            > img {
+                width: 350px;
+                height: 350px;
+            }
+
+            > .text {
+                width: auto;
+                align-content: center;
+                h1 {
+                    font-size: 36px;
+                }
+            }
+        }
+
+        .sect-2 {
+            
+        }
+    }
+
+    .container {
+            grid-template-rows: 850px 3600px 1142px 472px;
+    }
 }
