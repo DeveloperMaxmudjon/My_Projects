@@ -1,0 +1,197 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --text-font: 'SF Pro Display', sans-serif;
+
+    --black-bgcolor: black;
+    --white-bgcolor: white;
+    --blue-bgbutton: #0071E3;
+
+    --white-textcolor: white;
+    --black-textcolor: #1D1D1F;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45px 2300px 1775px 705px 300px;
+    font-family: var(--text-font);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+
+    nav {
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        #menu {
+            display: none;
+        }
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 692px 1fr 1fr;
+}
+
+.hero-sect {
+    background-image: url(images/Figure.png) !important;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+
+    h1 {
+        font-size: 55px;
+        font-weight: 600;
+        color: var(--black-textcolor);
+    }
+
+    p {
+        font-size: 32px;
+        font-weight: 400;
+        color: var(--black-textcolor);
+    }
+
+    button {
+        width: 120px;
+        padding: 12px 22px;
+        background-color: var(--blue-bgbutton);
+        border: none;
+        border-radius: 980px;
+        color: var(--white-textcolor);
+        margin-bottom: 65px;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+
+    .hero-sect {
+        background-image: url(images/bgevent.png) !important;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 600;
+            color: var(--black-textcolor);
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: 400;
+            color: var(--black-textcolor);
+        }
+    }
+}
+
+@media screen and (max-width:1025px) {
+    main {
+        grid-template-rows: 570px 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .catigory {
+        display: none;
+    }
+
+    main {
+        grid-template-rows: 620px 1fr 1fr;
+    }
+
+    header {
+        nav {
+            width: 100%;
+            justify-content: space-around;
+
+            #apple-icon {
+                width: 75%;
+                justify-content: start;
+            }
+
+            #menu {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .hero-sect {
+
+        h1 {
+            font-size: 48px;
+            font-weight: 600;
+            color: var(--black-textcolor);
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: 400;
+            color: var(--black-textcolor);
+        }
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .catigory {
+        display: none;
+    }
+
+    header {
+        nav {
+            width: 100%;
+            justify-content: space-around;
+
+            #apple-icon {
+                width: 75%;
+                justify-content: start;
+            }
+
+            #menu {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .hero-sect {
+        background-image: url(images/figure3.png) !important;
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+            color: var(--black-textcolor);
+        }
+
+        p {
+            font-size: 19px;
+            font-weight: 400;
+            color: var(--black-textcolor);
+        }
+
+    }
+}
+
